@@ -2,13 +2,17 @@
 
 This layer contains [mender](https://mender.io/) specific integrations for NVIDIA Tegra hardware, for Over The Air (OTA) software update support of Yocto based NVIDIA Tegra hardware.
 
-It depends on the [meta-tegra](https://github.com/madisongh/meta-tegra) layer with branch matching the selected branch name.
+It depends on the [meta-tegra](https://github.com/madisongh/meta-tegra) layer with branch matching the selected branch name.  Until [this pull request](https://github.com/madisongh/meta-tegra/pull/114) is resolved it will be necessary to use the repository/branch [here](https://github.com/Trellis-Logic/meta-tegra/tree/add-data-partition-support).
 
 ## Tested Platforms
 
 * Jetson TX2 Development Board
 
 # Using
+
+The easiest way to test run is to use the project at [yocto-tegra](https://github.com/Trellis-Logic/yocto-tegra) where all of these steps are already complete.
+
+For detailed instructions to incorporate with your yocto project build, see below.
 
 1. Clone this project and meta-tegra into a local directory within your Yocto project
 2. Use bitbake-layers add-layer or edit your build/conf/bblayers.conf file to include both meta-tegra and this project.
