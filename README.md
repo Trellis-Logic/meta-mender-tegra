@@ -21,7 +21,7 @@ IMAGE_CLASSES += "image_types_tegra"
 IMAGE_FSTYPES += "tegraflash"
 ```
 These select the appropriate target hardware and image types for the meta-tegra project.  See instructions at [this link](https://github.com/madisongh/meta-tegra/wiki/Flashing-the-Jetson-Dev-Kit).
-``
+```
 # 
 MENDER_ARTIFACT_NAME = "release-1"
 INHERIT += "mender-full"
